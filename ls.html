@@ -6,16 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Rohan Nakra">
     <meta name="description" content="loading">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Loading Screen</title>
 </head>
 <body>
     <style>
     
+    * {
+        font-family: 'Roboto Mono', monospace;
+    }
     body {
         text-align: center;
         background-color: black;
         color:white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     }
     progress {
         border: 1px solid black;
@@ -34,7 +39,7 @@
 
 
     </style>
-    <h3>Loading...</h3>
+    <h3 id="text">Loading...</h3>
     <progress value="0 " max="100"></progress>
     <p id="status"></p>
     <script src="ls.js"></script>

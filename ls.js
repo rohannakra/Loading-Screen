@@ -2,6 +2,7 @@ function l() {    // Changing document display.
     var loading = document.getElementsByTagName("progress")[0];
     loading.value++;
     document.getElementById("status").textContent = loading.value + "%";
+
     return loading.value;
 }
 
