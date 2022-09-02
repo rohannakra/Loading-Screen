@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rohan Nakra">
+    <meta name="description" content="loading">
+    <title>Loading Screen</title>
+</head>
+<body>
+    <style>
+    
+    body {
+        text-align: center;
+        background-color: black;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    }
+    progress {
+        border: 1px solid black;
+        background: white;
+        padding: 1px;
+    }
+
+    progress::-webkit-progress-value {
+        background: white;
+    }
+
+    progress::-webkit-progress-bar {
+    background: black;
+    
+    }
+
+
+    </style>
+    <h3>Loading...</h3>
+    <progress value="0 " max="100"></progress>
+    <p id="status"></p>
+    <script src="ls.js"></script>
+</body>
+</html>
